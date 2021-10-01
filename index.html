@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" type="imagem/ico" href="images/logo-simpletech.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400;1,600&display=swap" rel="stylesheet">
+        
+        <title>SimpleTech - Aplicativo MatchWork</title>
+    </head>
+
+    <body>
+        <div id="main">
+            <header>
+                <img class="img-logo" src="images/logo-matchwork.png" alt="Logo aplicativo MatchWork">
+                <img class="img-logo" src="images/matchwork-slogan.png" alt="Slogan aplicativo MatchWork">
+            </header>
+
+            <div id="box">
+                <div id="infos-app">
+                    <h1>Sobre o App</h1>
+                    <p>
+                        O aplicativo MatchWork tem como objetivo simplificar o processo de busca e oferta de empregos e torná-lo mais
+                        rápido e menos burocrático, como uma alternativa para minimizar o número de desempregados atualmente no Brasil, 
+                        diminuindo consequentemente os efeitos negativos que a falta de trabalho tem sobre essas pessoas. Essa ferramenta
+                        poderá ser utilizada por pessoas que buscam por vagas de emprego e por empresas que procuram integrar a tecnologia 
+                        em seus processos de recrutamento para otimizá-los. O intuito foi desenvolver um software no qual os usuários possam
+                        visualizar rapidamente suas opções e escolher facilmente quais tem interesse, permitindo o contato direto e rápido
+                        entre candidatos e empresas. A interface do aplicativo foi planejada para trazer a melhor experiência aos usuários, 
+                        sendo acessível e de fácil entendimento, mostrando de forma descomplicada todas as suas funcionalidades, para que 
+                        utilizem por completo do que ele oferece sem nenhum inconveniente. 
+                    </p>
+                </div>
+
+                <div id="screens">
+                    <div class="infos-screen">
+                        <div id="splash-screen" class="infos" onclick="changeImage(this)">
+                            <h3>Splash Screen</h3>
+                            <p>
+                                Ao abrir o aplicativo há a tela de carregamento. Essa tela tem função apenas de ser uma 
+                                apresentação do aplicativo, nela pode-se ver algumas informações como logo, slogan e o 
+                                nome da empresa responsável pelo software. 
+                            </p>
+                        </div>
+
+                        <div id="login" class="infos" onclick="changeImage(this)">
+                            <h3>Login</h3>
+                            <p>
+                                A tela de login é onde o usuário pode realizar cadastro, realizar acesso 
+                                com e-mail ou usuário e senha e redefinir sua senha, se for 
+                                da preferência do usuário é possível acessar também por 
+                                uma conta no LinkedIn. É a partir deste acesso que, após 
+                                terminar de criar um perfil com seus dados, poderá
+                                visualizar os perfis de candidatos ou vagas/empresas e utilizar o aplicativo. 
+                            </p>
+                        </div>
+
+                        <div id="profile" class="infos" onclick="changeImage(this)">
+                            <h3>Profile</h3>
+                            <p>
+                                A tela de perfil é onde encontram-se as informações sobre os candidatos do aplicativo. No 
+                                perfil dos candidatos constam dados como nome, idade, ocupação, localização, escolaridade, conhecimentos e 
+                                imagens. Nesta tela há a opção de curtir e não curtir. Se um candidato gosta de uma vaga, ele clica na 
+                                opção curtir, se não gosta clica na opção não curtir. Utilizando dessas opções é 
+                                possível ocorrer um match. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="img-screen">
+                        <img id="img-selector" src="images/img-splash-screen.png" alt="Imagem tela">
+                    </div> 
+
+                    <div class="infos-screen">
+                        <div id="vaga" class="infos" class="infos" onclick="changeImage(this)">
+                            <h3>Job Vacancy</h3>
+                            <p>
+                                A tela de vagas é onde encontram-se as informações sobre os outros usuários do aplicativo, as empresas. No perfil de 
+                                vagas/empresas constam nome da empresa, ramo, número de funcionários, localização, informações específicas da vaga e 
+                                imagens. Nesta tela há também a opção de curtir e não curtir.
+                            </p>
+                        </div>
+            
+                        <div id="match" class="infos" onclick="changeImage(this)">
+                            <h3>Match</h3>
+                            <p>
+                                A tela de match aparece como um pop-up, trazendo mais duas funções para o usuário: enviar uma mensagem e iniciar 
+                                uma conversa com o candidato ou vaga com que deu match ou continuar buscando, visualizando outros perfis, podendo 
+                                enviar a mensagem em outra hora que preferir.
+                            </p>
+                        </div>
+
+                        <div id="chat" class="infos" onclick="changeImage(this)">
+                            <h3>Chat</h3>
+                            <p>
+                                A tela de mensagens é dividida em duas partes. As mensagens na parte superior são as que ainda não foram 
+                                lidas, e as inferiores são aquelas que já foram lidas. Aqui é onde é possível atingir o principal objetivo 
+                                do aplicativo. Nessa tela empresa e candidato podem entrar em contato, conversar e dar continuidade ao processo,
+                                após realizar uma seleção de forma simples, dinâmica e em um período curto de tempo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="comments-container">
+                <h2>Comentários</h2>
+
+                <div class="comments">
+                    <div>
+                        <img src="images/profile-pic-1.png" alt="Foto de perfil">
+                        <h5>Carol Grimalde</h5>
+                        <p>
+                            Ser SimpleTech é buscar fazer a diferença na vida das pessoas! O projeto MatchWork foi um desafio desde o início. 
+                            Nós buscávamos começar a empresa com algo que fosse inovador, impactante e, ao mesmo tempo, simples pro usuário. 
+                            Assim surgiu a ideia de trazer pro mercado esse app que conecta empresas e pessoas, sempre trabalhando com a 
+                            motivação de que estamos impactando positivamente a sociedade.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <img src="images/profile-pic-3.png" alt="Foto de perfil">
+                        <h5>Jeniffer Braga</h5>
+                        <p>
+                            Fazer parte da SimpleTech me proporcionou evoluir cada vez mais individualmente e junto com o grupo. O MatchWork foi 
+                            uma ideia pequena, que amadureceu e se tornou o que é hoje, sempre com muita dedicação e força de vontade de toda a equipe.
+                            Tenho certeza que da mesma forma que o desenvolvimento desse projeto trouxe benefícios para nós, trará 
+                            também benefícios pra quem utilizar o aplicativo, tendo em suas mãos uma inovação, que vai facilitar uma atividade 
+                            comum diária e solucionar alguns dos problemas enfrentados durante o dia-a-dia. 
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <img src="images/profile-pic-2.png" alt="Foto de perfil">
+                        <h5>Felipe Marco</h5>
+                        <p>
+                            Ao criar a SimpleTech já tínhamos em mente que não seria apenas um trabalho, e sim uma empresa, com várias ideias a 
+                            curto e longo prazo, estamos tornando isso uma realidade. Tenho orgulho de fazer parte desse time, de ver toda 
+                            dedicação envolvida e dos resultados entregues. O MatchWork é o carro chefe onde estaremos trabalhando em cada 
+                            detalhe para entregar um produto de qualidade que não traga ganhos somente para nós e sim para toda sociedade.  
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comments">
+                    <div>
+                        <img src="images/profile-pic-4.png" alt="Foto de perfil">
+                        <h5>Lucas Paiva</h5>
+                        <p>
+                            O grupo SimpleTech tem evoluído cada dia mais, o projeto pioneiro para o crescimento foi a criação do Match Work. 
+                            Venho passando por grandes evoluções tanto de conhecimento quanto profissional dentro do time, e o maior objetivo 
+                            fora encontrar pessoas motivadas e com o mesmo propósito. Te convido a conhecer nossos projetos, e quem sabe fazer 
+                            parte do nosso grupo de Desenvolvedores.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="images/profile-pic-5.png" alt="Foto de perfil">
+                        <h5>Weslley Fernandes</h5>
+                        <p>
+                            Participar do grupo SimpleTech vem sendo a cada dia um desafio, principalmente na criação do MatchWork. 
+                            Onde contamos com pessoas totalmente motivadas e com o mesmo proposito de fazer do software uma porta de oportunidade 
+                            para milhares de pessoas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Desenvolvido por <img src="images/simpletech.png" alt="simpletech"></p>
+            </footer>
+        </div>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+</html>
